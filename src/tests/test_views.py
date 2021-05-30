@@ -1,10 +1,10 @@
-from django.test import TestCase
+from django.test import SimpleTestCase
 from app.views import *
 from app.models import *
 from django.db import models
 import datetime
 
-class ViewTestCase(TestCase):
+class ViewTestCase(SimpleTestCase):
     
     def testPost(self):
         p = Post(date=datetime.datetime.now(), photo=random_picture())

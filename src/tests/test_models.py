@@ -1,7 +1,7 @@
-from django.test import TestCase
+from django.test import SimpleTestCase
 from app.models import *
 
-class PostTestCase(TestCase):
+class PostTestCase(SimpleTestCase):
     
     def Post(self):
         pass
